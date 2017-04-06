@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Function Arguments Example 2</title>
+    <script type="text/javascript">
+        function setName(obj) {
+            obj.name = "Nicholas";
+        }
+        
+        var person = new Object();
+        setName(person);
+        alert(person.name);    //"Nicholas"
+
+        function setOther(obj) {
+            obj.name = "Others"  ;
+            obj = new Object() ;
+            obj.name = "new Obj" ;
+        }
+        setOther(person)
+        alert(person.name)
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
