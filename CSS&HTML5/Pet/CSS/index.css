@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url("../images/pattern.gif");
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+/*引入外部字体*/
+@font-face {
+    font-family: BebasNeue-webfont;
+    src:url('../font/BebasNeue-webfont.ttf')
+}
+
+/*头部*/
+#header {
+    background-color: red;
+    height: 3px;
+}
+
+/*导航*/
+#nav {
+    text-align: center;
+}
+
+#nav ul {
+    display: inline-block;
+}
+
+#nav ul li {
+    display: inline-block;
+}
+
+#nav ul li a {
+    /*改变标签类型*/
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+
+    font-size: 40px;
+    font-family: BebasNeue-webfont;
+
+}
+
+#nav a.selected , #nav a:hover{
+    background-color: white;
+    color: black;
+}
+
+#list {
+    margin-top: 100px;
+    text-align: center;
+    background-color: white;
+}
+
+#list .love {
+    /*改变标签类型*/
+    display: inline-block;
+    width: 382px;
+    margin: 20px;
+
+    /*重写*/
+    text-align: left;
+}
+
+#list .love a{
+    background-color: orange;
+    display: inline-block;
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: BebasNeue-webfont;
+
+
+    text-align: center;
+    line-height: 35px;
+}
+
+#list .love a:hover {
+    background-color: black;
+}
+
+#list .love p {
+    font-family: sans-serif;
+    margin: 7px 0;
+    text-indent: 8px;
+}
+
+/*尾部*/
+#footer {
+    text-align: center;
+}
+
+#footer h2 {
+    color: white;
+    font-size: 35px;
+    margin: 8px 0;
+}
+
+#footer ul, #footer ul li {
+    display: inline-block;
+}
+
+#footer ul li img {
+    margin: 0 5px;
+}
+
+/*自定义布局*/
+@media screen and (max-width: 1095px) {
+    #nav ul li a {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 844px) {
+    #nav ul li a {
+        width: 80px;
+        font-size: 20px;
+    }
+
+    #list {
+        margin-top: 50px;
+    }
+}
