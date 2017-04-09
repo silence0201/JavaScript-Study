@@ -1,0 +1,131 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url("../imgs/bg.jpg");
+    background-size: cover;
+}
+
+a {
+    color: black;
+}
+
+/*头部*/
+#header {
+    /*右对齐*/
+    text-align: right;
+    /*设置上下间距*/
+    /*margin: 15px;*/
+    background-color: rgba(0,0,0,0.2);
+    height: 42px;
+}
+
+#header a {
+    /*加粗*/
+    font-weight: bold;
+    /*设置字体*/
+    font-size: 15px;
+    /*右边距*/
+    margin-right: 8px;
+
+    color: white;
+    line-height: 42px;
+}
+
+#header a.no-weight {
+    font-weight: normal;
+}
+
+#header a.more-produce {
+    background-color: #3385ff;
+    color: white;
+    text-decoration: none;
+    /*设置内边距*/
+    padding: 6px;
+}
+/*中间的内容*/
+#content {
+
+}
+
+#content .top-content {
+    /*居中*/
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#content .top-content img {
+    width: 270px;
+    height: 129px;
+}
+
+#content .bottom-content {
+    width: 600px;
+    height: 38px;
+    /*居中*/
+    margin: 0 auto 30px;
+}
+
+#content .bottom-content input {
+    width: 500px;
+    height: 100%;
+
+    box-sizing: border-box;
+    /*左内边距*/
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+#content .bottom-content a {
+    background-color:#3385ff ;
+    color: white;
+    text-decoration: none;
+    width: 100px;
+    height: 38px;
+
+    float: right;
+
+    /*水平居中和垂直居中*/
+    text-align: center;
+    line-height: 38px;
+}
+
+#content .quick-search {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#content .quick-search img{
+    width: 101px;
+    height: 91px;
+    /*设置外边距*/
+    margin: 5px;
+}
+
+#content .quick-search img:hover {
+    /*设置不透明度*/
+    opacity: 0.5;
+}
+
+#footer {
+
+    position: fixed;
+    bottom:0;
+    padding: 30px;
+    width: 100%;
+
+    /*内容居中*/
+    text-align: center;
+}
+
+#footer .top-footer {
+    margin-bottom: 5px;
+}
+
+#footer .top-footer a {
+    margin: 0 5px;
+    color: gray;
+}
