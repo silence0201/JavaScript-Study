@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>CRUD</title>
-    <script>
-        function changeImg() {
-            // 获取网页中的图像标签
-            var img = document.getElementsByTagName("img")[0] ;
-            console.log(img) ;
-            img.src = "image/img_02.jpg" ;
+    <style>
+        #main{
+            background-color: red;
+            width: 400px;
+            height: 300px;
         }
-    </script>
+    </style>
 </head>
 <body>
 
-    <img src="image/icon_01.png">
-    <p></p>
-    <button onclick="changeImg();">更改图片</button>
+<div id="main">
+    <p>我是描述图片的</p>
+</div>
 
+<script src="js/index.js"></script>
 </body>
 </html>
