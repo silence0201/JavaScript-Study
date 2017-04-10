@@ -1,0 +1,62 @@
+a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var{
+    margin:0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 100px;
+}
+
+#tab {
+    border: 1px solid #dddddd;
+    width: 498px;
+    height: 120px;
+    /*超出部分裁剪*/
+    overflow: hidden;
+}
+
+#tab-header {
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    background-color: #e8e8e8;
+}
+
+#tab-header ul {
+    width: 500px;
+}
+
+#tab-header li {
+    float: left;
+    width: 98px;
+
+    border-bottom: 1px solid #dddddd;
+}
+
+.selected {
+    background-color: white;
+    border-bottom: 0;
+
+    /*设置左右线条*/
+    border-left:1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+}
+
+#tab-content .dom {
+    display: none;
+}
+
+#tab-content .dom a {
+    float: left;
+    width: 220px;
+    margin: 8px ;
+}
