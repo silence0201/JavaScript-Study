@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>认识jQuery</title>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <!--
+   JS存在的痛点:
+   1. 复杂的DOM操作
+   2. 浏览器兼容问题
+   3. 事件\动画比较复杂
+
+   jQuery的亮点:
+   1. 轻松实现DOM操作
+   2. 轻松解决浏览器兼容问题
+   3. 轻松实现动画和事件
+
+-->
+</head>
+<body>
+
+<div id="main">
+    <p class="word">我是MT</p>
+    <p class="word">我是MT</p>
+    <p class="word">我是MT</p>
+    <p class="word">我是MT</p>
+    <p class="word">我是MT</p>
+    <div class="test1">
+        <img src="image/img_01.jpg">
+        <img src="image/img_01.jpg">
+        <img src="image/img_01.jpg">
+        <img src="image/img_01.jpg">
+        <img src="image/img_01.jpg">
+        <img src="image/img_01.jpg">
+    </div>
+</div>
+
+<button>显示</button>
+<button>隐藏</button>
+<button>切换</button>
+
+<script>
+
+    // 标签属性值
+    console.log($('.word').attr('class')) ;
+
+    // 改变标签的值
+    $('img').attr('src','image/img_02.jpg')
+    // 文本
+    console.log($('p').text()) ;
+    // html
+    console.log($('#main').html()) ;
+
+    $('button').eq(0).on('click',function () {
+        $('p').show(600) ;
+        $('img').show(600) ;
+    }) ;
+
+    $('button').eq(1).on('click',function () {
+        $('p').hide(1000) ;
+        $('img').hide(1000) ;
+    }) ;
+
+    $('button').eq(2).on('click',function () {
+        $('p').toggle(800) ;
+        $('img').toggle(800) ;
+    }) ;
+
+    // 遍历
+    var datas = [20,21,222,222,333,444] ;
+    $.each(datas,function (index,value) {
+        console.log(index,value) ;
+    }) ;
+
+    // 取出下标
+    var inde = $.inArray(21,datas);
+    console.log(inde) ;
+
+    // 设置css
+    $('.word').css({
+        "background":'red'
+    }) ;
+
+</script>
+
+</body>
+</html>
