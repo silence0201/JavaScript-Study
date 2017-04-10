@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Window</title>
+    <script>
+        // 第一大作用:
+        // 1.1 所有全局的变量都是window的属性
+        // 1.2 所有的全局函数都是window的方法
+
+        var age = 17 ;
+        console.log(age) ;
+        console.log(window.age) ;
+
+        function dog() {
+            console.log('这是一条🐶');
+
+        }
+
+        dog() ;
+        window.dog() ;
+
+        function person() {
+            console.log(this) ;
+        }
+
+        person() ;
+        new person() ;
+
+        // 第二大作用
+        // 1.动态的跳转
+        window.location.href = "https://www.baidu.com" ;
+    </script>
+</head>
+<body>
+
+</body>
+</html>
