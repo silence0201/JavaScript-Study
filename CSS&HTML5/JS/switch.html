@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch</title>
+</head>
+<body>
+
+<img name="icon" src="image/icon_01.png">
+<p></p>
+<button>上一张</button>
+<button>下一张</button>
+
+<script>
+   // 全局变量
+    var maxIndex = 9 ;
+    var minIndex = 1 ;
+    var currentIndex = minIndex ;
+
+    // 拿到药操作的标签
+    var img = document.getElementsByName("icon")[0] ;
+    var pre = document.getElementsByTagName('button')[0] ;
+    var next = document.getElementsByTagName('button')[1] ;
+
+    // 监听按钮的点击
+    // 上一张
+    pre.onclick = function () {
+        if (currentIndex == minIndex){ // 边界处理
+            currentIndex = maxIndex;
+        }else{ // 正常情况
+            currentIndex -=1;
+        }
+        // 改变src
+        img.src = 'image/icon_0' + currentIndex + '.png';
+    } ;
+
+    next.onclick = function () {
+        if (currentIndex == maxIndex){ // 边界处理
+            currentIndex = minIndex;
+        }else{ // 正常情况
+            currentIndex +=1;
+        }
+
+        // 改变src
+        img.src = 'image/icon_0'+currentIndex+'.png';
+    } ;
+
+</script>
+
+</body>
+</html>
