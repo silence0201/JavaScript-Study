@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timer</title>
+    <style>
+        body{
+            background-color: black;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        div{
+            color: red;
+            font-size: 150px;
+        }
+
+        img{
+            display: none;
+        }
+
+        p{
+            display: none;
+            color: red;
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+<img id="icon" src="image/flower.gif">
+<p id="word">我对你的爱滔滔不绝.....</p>
+<div id="number">4</div>
+
+<script>
+    var img = document.getElementById('icon');
+    var word = document.getElementById('word');
+    var number = document.getElementById('number');
+
+    // 设置定时器
+    var timer = setInterval(function () {
+        // 改变定时器的数字
+        number.innerText -= 1 ;
+        if(number.innerText == 0) {
+            // 清除定时器
+            clearInterval(timer) ;
+            // 显示 css + style
+            word.style.display = 'block';
+            img.style.display = 'inline-block';
+            // 隐藏number
+            number.style.display = 'none';
+        }
+    },1000) ;
+</script>
+
+</body>
+</html>
