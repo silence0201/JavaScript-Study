@@ -1,0 +1,44 @@
+body{
+   margin-top: 50px;
+}
+
+/*中间主要内容*/
+#content{
+   margin: 40px;
+}
+
+#content  .container{
+   text-align: center;
+}
+
+#content  .container .row img{
+    width: 140px;
+}
+
+#content  .container .row p{
+    height: 60px;
+    text-align:left;
+    text-indent: 8%;
+}
+
+#content .container .col-md-4 {
+    margin: 20px 0;
+}
+
+.tab-content .text-muted {
+    font-size: 20px;
+}
+
+.tab-content .row {
+    padding-top: 20px;
+}
+
+
+.tab-content .col-md-7 h2{
+    text-align: center;
+}
+
+
+#footer{
+    padding-bottom: 50px;
+}
